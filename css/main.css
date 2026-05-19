@@ -43,6 +43,119 @@ h3 {
   margin: 0;
 }
 
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+#logo {
+  width: 80px;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  background-color: #F54F95;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5em 0.1em;
+  margin-left: 1em;
+  border: 1px solid #F54F95;
+}
+
+header nav ul a:hover,
+header nav ul a:focus {
+  background-color: transparent;
+  color:#F54F95;
+}
+
+#hero {
+  height: 60vh;
+  background-image: url(../images/hero-donuts.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color:#f54f95;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section{
+  padding: 4em 0;
+}
+
+.product-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
 
 
+.product-card {
+  border-radius: 14px;
+  color:#fff;
+  padding: 2em 1.25em;
+  text-align: center;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.product-card:nth-child(1){
+  background-color: #F54F95;
+}
+
+.product-card:nth-child(2){
+  background-color: #c78e62;
+}
+
+.product-card:nth-child(3){
+  background-color: #f1ad2c;
+}
+
+.product-card:nth-child(4){
+  background-color: #2cd39c;
+}
+
+.product-card p.price {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+.product-card button {
+  background-color: white;
+  color: #F54F95;
+  font-size: 1.125rem;
+  border: none;
+  padding: 0.5em 1.5em;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.product-card button:hover,
+.product-card button:focus { 
+  color: white;
+  text-align: center;
+}
+
+footer {
+  background-color: #F54F95;
+  color: #fff;
+  text-align: center;
+  padding: 2em;
+}
